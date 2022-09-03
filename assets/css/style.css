@@ -26,6 +26,11 @@ nav{
     width: 100%;
 }
 
+main{
+    display: block;
+    width: 100%;
+}
+
 .width-nav{
     display: flex;
     flex-direction: row;
@@ -88,7 +93,7 @@ article.sobre-direito p.text, article.sobre-direito h1.title{
     margin-left: 10%;
 }
 
-section#meus-trabalhos{
+main section#meus-trabalhos{
     background-color: white;
     height: 600px;
     width: auto;
