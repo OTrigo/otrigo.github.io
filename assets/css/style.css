@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #15152A;
+}
+
+nav a:hover{
+    background-color: #15152A;
+    padding: 100% 10px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: inherit ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    width: auto;
+    background-color: white;
+    color: #15152A;
+    padding: 0 50px;
+    position: sticky;
+}
+
+main{
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type:none;
+}
+
+li{
+    padding: 10px;
+}
+
+main #sobre-mim{
+    background-color: #15152A;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 100px 15px;
+}
+
+article.sobre-esquerdo{
+    margin-left:150px;
+}
+
+article.sobre-esquerdo img#perfil-imagem{
+    height: 350px;
+    width: 350px;
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+article.sobre-direito{
+    color: white;
+}
+
+article.sobre-direito p.text, article.sobre-direito h1.title{
+    width: 50%;
+    margin-left: 10%;
+}
+
+section#meus-trabalhos{
+    background-color: white;
+    height: 600px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#meus-trabalhos h1.title{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.grupo-trabalhos{
+    display: flex;
+    flex-direction: row;
+}
+
+span.amarelo-hover{
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+span.amarelo-hover:hover{
+    color: #FFBF00;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+}
+
+.bloco-trabalho{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    background-color: #15152A;
+    margin: 20px 50px;
+    color: white;
+    border-radius: 5px;
+}
+
+.bloco-trabalho:hover{
+    color:#15152A;
+    background-color: white;
+    border:1px solid #15152A;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
