@@ -44,6 +44,10 @@ li{
     padding: 10px 30px;
 }
 
+#hamburger, #icon-burg{
+    display: none;
+}
+
 #sobre-mim{
     background-color: #15152A;
     display: flex;
@@ -141,6 +145,16 @@ span.amarelo-hover:hover{
 }
 
 @media (max-width:1000px){
+    
+    #hamburger, #icon-burg{
+        display: block;
+        font-size: 30px;
+    }
+
+    nav ul{
+        display: none;
+    }
+    
     .grupo-trabalhos{
         flex-direction: column;
     }
