@@ -10,11 +10,11 @@
 <body>
     <nav>
         <div class="width-nav">
-            <h1><span class="amarelo-hover">Jorge</span> <span class="amarelo-hover">Lucas</span></h1>
+            <h1 class="logo"><span class="amarelo-hover">Jorge</span> <span class="amarelo-hover">Lucas</span></h1>
             <ul class="links">
                 <li><a href="#sobre-mim">Sobre mim</a></li>
                 <li><a href="#meus-trabalhos">Meus trabalhos</a></li>
-                <li><a href="#linkedin">Linkedin</a></li>
+                <li><a href="https://www.linkedin.com/in/jorge-lucas-473a32211/" target="_blank">Linkedin</a></li>
             </ul>
             <div class="menu-btn" id="hamburger">
                 <ion-icon name="menu-outline" id="icon-burg"></ion-icon>
@@ -34,13 +34,21 @@
                     Sobre Mim
                 </h1>
                 <p class="text">
-                    Lorem ipsum dolor, 
-                    sit amet consectetur adipisicing elit. Officiis, 
-                    saepe animi aperiam nam repellat vel veritatis! 
-                    Sit aspernatur dolor eaque eligendi fugiat 
-                    labore deleniti reprehenderit dolorum, 
-                    dicta accusamus unde alias.
+                    Sou Jorge Lucas, Estudante da <span class="amarelo-hover">FATEC de Praia Grande no curso de Sistemas de Informação</span> e amante do JavaScript & TypeScript e suas respectivas bibliotecas e frameworks. 
+                    Atualmente estou estudando os principais frameworks em JavaScript para desenvolvimento web e desenvolvimento de software tanto no back quanto para o front-end.
                 </p>
+                <div class="buttons-wrapper">
+                    <button class="button" id="email">
+                        <ion-icon name="mail-outline" id="icon-email"></ion-icon>
+                        <text>Email</text>
+                    </button>
+                    
+                    <button class="button" id="github">
+                        <ion-icon name="logo-github"></ion-icon>                        
+                        <text>Github</text>
+                    </button>
+                </div>
+                
             </article>
 
         </section>
@@ -51,9 +59,23 @@
             <article class="trabalhos">
                 <h1 class="title">Meus trabalhos</h1>
                 <div class="grupo-trabalhos">
-                    <div class="bloco-trabalho"><p>Projetos JavaScript</p></div>
-                    <div class="bloco-trabalho"><p>Site Solanium</p></div>
-                    <div class="bloco-trabalho"><p>Github</p></div>
+                    <a href="#javascript" target="_blank">
+                        <div class="bloco-trabalho">
+                            <p>Projetos Javascript</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://solanium.com.br" target="_blank">
+                        <div class="bloco-trabalho">
+                            <p>Site Solanium</p>
+                        </div>
+                    </a>
+
+                    <a href="https://solanium.com.br" target="_blank">
+                        <div class="bloco-trabalho">
+                            <p>Outros projetos</p>
+                        </div>
+                    </a>
                 </div>
             </article>
     </main>

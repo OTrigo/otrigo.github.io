@@ -1,3 +1,38 @@
+:root{
+    --titulo:#eacdc2;
+    --texto:#f7fff7;
+    --fundo: #1e1e24;
+    --fundo-hover:white;
+    --texto-hover:black;
+    --fundo-claro:#E63462
+    --borda:#f7fff7;
+
+    --fundo2:#1e1e24;
+    --fundo3:#E63462;
+
+    --azul:#E63462;
+}
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--fundo);
+    border-radius: 10px;
+    background:var(--fundo-claro)
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--fundo3);
+    border-radius: 0px;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -5,20 +40,26 @@
     scroll-behavior: smooth;
 }
 
+*::selection {
+    color: var(--titulo);
+    background-color: var(--fundo);
+  }
+
 body{
-    background-color: #15152A;
+    background-color: var(--fundo);
 }
 
 nav a:hover{
-    background-color: #15152A;
-    padding: 100% 10px;
+    background-color: var(--fundo3);
+    padding: 10% 10px;
     color: white;
     transition: all 0.2s ease-in-out;
+    border-radius:5px
 }
 
 a{
     text-decoration: none;
-    color: inherit ;
+    color: var(--texto) ;
 }
 
 nav{
@@ -36,17 +77,30 @@ main{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 100px;
-    background-color: white;
+    background-color: var(--fundo2);
+    color:var(--texto);
 }
 
-ul{
+.logo{
+    font-size:2rem;
+}
+
+ul.links{
     display: flex;
     flex-direction: row;
+}
+
+ul.links li:first-child{
+    background-color: var(--fundo3);
+    color: white;
+    transition: all 0.2s ease-in-out;
+    border-radius:5px
 }
 
 li{
     list-style-type: none;
     padding: 10px 30px;
+    font-size:1rem;
 }
 
 #hamburger, #icon-burg{
@@ -54,7 +108,7 @@ li{
 }
 
 #sobre-mim{
-    background-color: #15152A;
+    background-color: var(--fundo2);
     display: flex;
     align-items: center;
     height: 400px;
@@ -68,33 +122,81 @@ article.sobre-esquerdo{
 article.sobre-esquerdo img#perfil-imagem{
     height: 250px;
     width: 250px;
-    border: 4px solid white;
-    border-radius: 5px;
+}
+
+article.sobre-esquerdo::before{
+   background-color:var(--texto);
+   width:100%;
+   height:100%;
 }
 
 img#perfil-imagem{
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
     margin-left: 50px;
+    border:0rem solid;
 }
 
 img#perfil-imagem:hover{
     opacity: 1;
     cursor: pointer;
+    border:1rem var(--fundo-hover) solid;
     transition: all 0.3s ease-in-out;
 }
 
 article.sobre-direito{
-    color: white;
+    color: var(--texto);
+    margin-left:10%;
 }
 
 article.sobre-direito p.text, article.sobre-direito h1.title{
-    width: 50%;
-    margin-left: 10%;
+    width: 60%;
+}
+
+article.sobre-direito h1.title{
+    font-size:2rem;
+    margin-bottom:0.5rem;
+    padding-bottom:0.5rem;
+}
+
+.buttons-wrapper{
+    display:flex;
+    flex-direction:row;
+}
+
+.button{
+    width:5rem;
+    margin-top:2.5%;
+    height:2rem;
+    border:var(--borda) solid 0.1rem;
+    color:var(--texto);
+    background: var(--fundo2);
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 1%;
+    margin-right:10px;
+}
+
+.button:hover{
+    background:var(--fundo-hover);
+    color:var(--texto-hover);
+    border-radius:5px;
+}
+
+#github{
+    padding:0 0.5%;
+}
+
+ion-icon{
+    font-size:24px;
 }
 
 main section#meus-trabalhos{
-    background-color: white;
+    background-color: var(--fundo3);
     height: 600px;
     width: auto;
     display: flex;
@@ -103,7 +205,8 @@ main section#meus-trabalhos{
 
 #meus-trabalhos h1.title{
     text-align: center;
-    margin-top: 2%;
+    margin:2.5% 0 1% 0;
+    color:var(--texto)
 }
 
 .grupo-trabalhos{
@@ -117,7 +220,7 @@ span.amarelo-hover{
 }
 
 span.amarelo-hover:hover{
-    color: #FFBF00;
+    color: var(--texto);
     cursor: pointer;
     transition: all 0.3s ease-in-out ;
 }
@@ -128,16 +231,16 @@ span.amarelo-hover:hover{
     justify-content: center;
     height: 100px;
     width: 300px;
-    background-color: #15152A;
+    background-color: var(--fundo2);
     margin: 20px 50px;
-    color: white;
+    color: var(--texto);
     border-radius: 5px;
 }
 
 .bloco-trabalho:hover{
-    color:#15152A;
-    background-color: white;
-    border:1px solid #15152A;
+    color:var(--texto-hover);
+    background-color: var(--fundo-hover);
+    border:1px solid var(--fundo-3);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -177,6 +280,11 @@ span.amarelo-hover:hover{
 
     article.sobre-direito{
         margin-top: 20%;
+    }
+
+    #sobre-mim{
+        height:auto;
+        padding-bottom:10%;
     }
     
 }
