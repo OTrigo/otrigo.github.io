@@ -4,13 +4,19 @@
     --fundo: #1e1e24;
     --fundo-hover:white;
     --texto-hover:black;
-    --fundo-claro:#E63462
+    --fundo-claro:#E63462;  
     --borda:#f7fff7;
-
     --fundo2:#1e1e24;
     --fundo3:#E63462;
+}
 
-    --azul:#E63462;
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Scroll */
@@ -22,9 +28,8 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--fundo);
     border-radius: 10px;
-    background:var(--fundo-claro)
+    background:var(--fundo)
   }
   
   /* Handle */
@@ -49,17 +54,9 @@ body{
     background-color: var(--fundo);
 }
 
-nav a:hover{
-    background-color: var(--fundo3);
-    padding: 10% 10px;
-    color: white;
-    transition: all 0.2s ease-in-out;
-    border-radius:5px
-}
-
-a{
-    text-decoration: none;
-    color: var(--texto) ;
+nav li a:hover:not(#sobre){
+    color:var(--fundo-claro);
+    transition: all 0.3s ease-in-out;
 }
 
 nav{
@@ -97,6 +94,14 @@ ul.links li:first-child{
     border-radius:5px
 }
 
+ul.links li:first-child:hover{
+    background-color: var(--texto);
+    color: var(--fundo2);
+    transition: all 0.2s ease-in-out;
+    border-radius:5px;
+    cursor:pointer;
+}
+
 li{
     list-style-type: none;
     padding: 10px 30px;
@@ -131,16 +136,17 @@ article.sobre-esquerdo::before{
 }
 
 img#perfil-imagem{
-    opacity: 0.8;
+    transform: scale(1);
     transition: all 0.3s ease-in-out;
     margin-left: 50px;
-    border:0rem solid;
+    border:0.5rem var(--fundo-hover) solid;
 }
 
 img#perfil-imagem:hover{
-    opacity: 1;
+    transform: scale(1.1);
     cursor: pointer;
-    border:1rem var(--fundo-hover) solid;
+    border:0.1rem var(--fundo-hover);
+    border-style:dotted;
     transition: all 0.3s ease-in-out;
 }
 
@@ -153,7 +159,7 @@ article.sobre-direito p.text, article.sobre-direito h1.title{
     width: 60%;
 }
 
-article.sobre-direito h1.title{
+article.sobre-direito h2.title{
     font-size:2rem;
     margin-bottom:0.5rem;
     padding-bottom:0.5rem;
@@ -164,7 +170,7 @@ article.sobre-direito h1.title{
     flex-direction:row;
 }
 
-.button{
+.buttons-wrapper .button{
     width:5rem;
     margin-top:2.5%;
     height:2rem;
@@ -179,6 +185,7 @@ article.sobre-direito h1.title{
     align-items:center;
     padding:0 1%;
     margin-right:10px;
+    font-size: 0.8rem;
 }
 
 .button:hover{
@@ -195,34 +202,43 @@ ion-icon{
     font-size:24px;
 }
 
-main section#meus-trabalhos{
+/* Estilos compartilhados */
+main section#meus-trabalhos, #meus-projetos-js{
     background-color: var(--fundo3);
-    height: 600px;
     width: auto;
     display: flex;
     justify-content: center;
 }
 
-#meus-trabalhos h1.title{
+#meus-trabalhos h2.title, article.projetosjs h2.title{
     text-align: center;
     margin:2.5% 0 1% 0;
     color:var(--texto)
 }
 
-.grupo-trabalhos{
+.grupo-trabalhos, .grupo-projetos-js{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-span.amarelo-hover{
+/* Meus trabalhos */
+
+main section#meus-trabalhos{
+    height:fit-content;
+    padding-bottom:2%;
+}
+
+span.efeito-logo{
     color: inherit;
     transition: all 0.3s ease-in-out;
 }
 
-span.amarelo-hover:hover{
-    color: var(--texto);
+span.efeito-logo:hover{
+    color: var(--fundo-claro);
     cursor: pointer;
     transition: all 0.3s ease-in-out ;
+    text-decoration:underline 0.2rem;
 }
 
 .bloco-trabalho{
@@ -245,46 +261,119 @@ span.amarelo-hover:hover{
     transition: all 0.3s ease-in-out;
 }
 
+/* Projetos Js */
+
+#meus-projetos-js{
+    background: var(--fundo);
+}
+
+.card-js{
+    display: flex;
+    align-items: left;    
+    justify-content: center;
+    flex-direction:column;
+    height: 350px;
+    width: 350px;
+    background-color: var(--fundo3);
+    margin: 20px 50px;
+    color: var(--texto);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.card-js-header{
+    font-size:1.2rem;
+    color: var(--texto);
+    padding: 4px;
+}
+
+.card-js-content img{
+    height:100%;
+    width:100%;
+    border-radius:4px;
+    transition:all 0.2s ease-in-out;
+}
+
+.card-js-content img:hover{
+    border-radius:4px;
+    transition:all 0.15s ease-in-out;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.card-js-footer{
+    font-size:1rem;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+}
+
 /* Responsividade */
-@media (max-width:1200px){
+@media (max-width:1300px){
     .grupo-trabalhos{
+        flex-direction: column;
+    }
+
+    .grupo-projetos-js{
         flex-direction: column;
     }
 }
 
 @media (max-width:1000px){
-    
+    article.sobre-esquerdo img#perfil-imagem{
+        display:none;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
     #hamburger, #icon-burg{
         display: block;
         font-size: 30px;
+        cursor: pointer;
     }
 
-    nav ul{
+    nav ul li{
         display: none;
     }
     
     .grupo-trabalhos{
         flex-direction: column;
     }
-    
-    #sobre-mim{
+
+    .grupo-projetos-js{
         flex-direction: column;
     }
+    
     article.sobre-esquerdo{
         margin-left:0px;
-    }
-    
-    article.sobre-esquerdo img#perfil-imagem{
-        display: none;
     }
 
     article.sobre-direito{
         margin-top: 20%;
     }
 
-    #sobre-mim{
-        height:auto;
-        padding-bottom:10%;
+    nav{
+        padding: 0;
     }
+
+    #sobre-mim{
+        flex-direction: column;
+        margin:0px;
+        padding-top:0;
+        height:fit-content;
+        padding-bottom:10%;
+        
+    }
+
+    article.sobre-direito{
+        flex: 1;
+        margin:50px 0 0 100px;
+    }
+    
+}
+
+@media (max-width:800px){
     
 }
