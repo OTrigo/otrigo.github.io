@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="models/main.css">
+</head>
+<body>
+    <header>
+        <h1 class="tittle">Logo</h1>
+        <input type="text" class="search" placeholder="O que você está procurando?">
+        <button type="button" class="btn" id="btn-search">pesquisar</button>
+    </header>
+
+    <section class="initial-container">
+        <div class="item-box">
+            <h1 class="item-tittle">Item 1</h1>
+        </div>
+        
+        <div class="item-box">
+            <h1 class="item-tittle">Item 2</h1>
+        </div>
+        
+        <div class="item-box">
+            <h1 class="item-tittle">Item 3</h1>
+        </div>
+
+        <div class="item-box">
+            <h1 class="item-tittle">Item 4</h1>
+        </div>
+    </section>
+
+    <section class="container-categorys">
+        <h2 class="category-tittle">
+            Categorias
+        </h2>
+        <section class="category-group">
+            <button class="btn-slider" id="previous"> < </button>
+
+            <div class="category" value="1">
+                <img src="images/category/bicicleta.png" class="category-image" id="bike-img-category" />
+                <p>Bicicletas</p>
+            </div>
+
+            <div class="category" value="2">
+                <img src="images/category/headset.png" class="category-image" id="bike-img-category" />
+                <p>Eletronicos</p>
+            </div>
+
+            <div class="category" value="3">
+                <img src="images/category/console.png" class="category-image" id="bike-img-category" />
+                <p>Consoles e Jogos</p>
+            </div>
+
+            <div class="category" value="4">
+                <img src="images/category/mascara.png" class="category-image" id="bike-img-category" />
+                <p>Dia-a-dia</p>
+            </div>
+
+            <div class="category" id="invisible" value="5">
+                <img src="images/category/relogio.png" class="category-image" id="bike-img-category" />
+                <p>Relógios</p>
+            </div>
+
+            <div class="category" id="invisible" value="6">
+                <img src="images/category/yoga.png" class="category-image" id="bike-img-category" />
+                <p>Equipamento para Pillates</p>
+            </div>
+
+            <button class="btn-slider" id="next"> > </button>
+        </section>
+
+        <section class="slider">
+            <img src="javascriptwillgettheimage" id="banner"/>
+        </section>
+
+    </section>
+
+    <footer>
+        <h3>Direitos autorais</h3>
+    </footer>
+
+    <script type="text/javascript" src="components/banner-index.js"></script>
+    <script type="text/javascript" src="components/slider-index.js"></script>
+
+</body>
+</html>

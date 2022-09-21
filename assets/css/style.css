@@ -220,6 +220,7 @@ main section#meus-trabalhos, #meus-projetos-js{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Meus trabalhos */
@@ -316,6 +317,8 @@ span.efeito-logo:hover{
 
     .grupo-projetos-js{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
