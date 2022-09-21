@@ -13,17 +13,12 @@ function zawarudo(){
     html +=  '<source src="videos/theworld.mp4" type="video/mp4" id="video">';
     html +=  '</video>';
 
-    html += '<style>'
-    html += '.bg_video{ position: absolute; display: block; width: 100vw; height: 100%; z-index: -10000000;}';
-    html += '#video{width:100vw; height:100vh;}'
-    html += '</style>'
-
     console.log(html)
 
     display.innerHTML += html
 
     setTimeout(function() {
-        freeze()
+        //freeze()
     }, 1000)    
     
 
