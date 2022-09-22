@@ -268,6 +268,13 @@ span.efeito-logo:hover{
     background: var(--fundo);
 }
 
+article.projetosjs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .card-js{
     display: flex;
     align-items: left;    
@@ -372,11 +379,39 @@ span.efeito-logo:hover{
 
     article.sobre-direito{
         flex: 1;
-        margin:50px 0 0 100px;
+        margin:0px;
+        padding:5% 0% 0% 5%;
+    }
+
+    .width-nav{
+    padding-left:5%;
     }
     
 }
 
 @media (max-width:800px){
-    
+    article.sobre-direito{
+        flex: 1;
+        margin:0px;
+        padding:5% 0% 0% 5%;
+    }
+
+    section#sobre-mim{
+        width:100%;
+    }
+
+    .width-nav{
+    padding-left:5%;
+    }
+
+    #meus-trabalhos h2.title, article.projetosjs h2.title{
+        text-align: center;
+        margin:5% 0 2.5% 0;
+        color:var(--texto)
+    }
+
+    article.sobre-direito p.text, article.sobre-direito h1.title{
+    width: 88%;
+}
+
 }
