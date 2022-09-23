@@ -14,9 +14,39 @@
     box-sizing: border-box;
 }
 
+html{
+    display: flex;  
+    justify-content: center;
+    
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.logo-html:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--fundo);
+}
+
+.logo-css:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--fundo);
+}
+
+.logo-node:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--fundo);
 }
 
 /* Scroll */
@@ -390,6 +420,19 @@ article.projetosjs{
 }
 
 @media (max-width:800px){
+
+    html{
+        width:fit-content;
+    }
+
+    body{
+        width:100%;
+    }
+
+    main#id-area{
+        width:100%;
+    }
+    
     article.sobre-direito{
         flex: 1;
         margin:0px;
@@ -413,5 +456,9 @@ article.projetosjs{
     article.sobre-direito p.text, article.sobre-direito h1.title{
     width: 88%;
 }
+    section#meus-trabalahos{
+        width:100%;
+        background-color:var(--fundo3)
+    }
 
 }
