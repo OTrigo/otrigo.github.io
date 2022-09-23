@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="assets/css/style.css" defer>
 </head>
 <body>
-    <nav>
+    <nav class="navegacao">
         <div class="width-nav">
-            <h1 class="logo"><span class="efeito-logo">Jorge</span> <span class="efeito-logo">Lucas</span></h1>
+            <h2 class="logo">
+                <span class="efeito-logo">Jorge</span> 
+                <span class="efeito-logo">Lucas</span>
+            </h2>
             <ul class="links">
                 <li><a href="#sobre-mim" id="sobre">Sobre mim</a></li>
                 <li><a href="#meus-trabalhos">Meus trabalhos</a></li>
@@ -22,9 +25,24 @@
         </div>
     </nav>
 
-    <main class="'">
-        <section id="sobre-mim">
+    <main class="area-principal">
+        <section id="principal">
+            <article class="principal-title">
+                <h3 class="subtitle">Primeiramente</h3>
+                <h1 class="title">Olá, eu sou Jorge Lucas</h1>
+                <h2 class="subtitle">Sou Desenvolvedor <span class="funcoes" id="texto">Web</span></h2>
+                <div class="buttons-wrapper-principal">
+                    <button class="button" id="contato">
+                        <ion-icon name="mail-outline" id="icon-email"></ion-icon>
+                        <p class="contato">Contate-me</p>
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
 
+    <main class="area-sobre">
+        <section id="sobre-mim">
             <article class="sobre-esquerdo">
                 <img src="assets/images/foto-pessoal.jpg" id="perfil-imagem">
             </article>
@@ -55,7 +73,7 @@
         </section>
     </main>
 
-    <main id="area-cards">
+    <main class="area-cards">
         <section id="meus-trabalhos">
             <article class="trabalhos">
                 <h2 class="title">Meus trabalhos</h2>
@@ -82,7 +100,7 @@
         </section>
     </main>
 
-    <main id="area-js">
+    <main class="area-js">
         <section id="meus-projetos-js">
             <article class="projetosjs">
                 <h2 class="title">Projetos em JavaScript Puro</h2>
@@ -242,14 +260,37 @@
     </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="assets/js/modal.js"></script>
     <script>
+    
+        let configuracao = {
+            strings: ['Web', 'Mobile', 'JavaScript'],
+            typeSpeed: 60,
+            backSpeed:60,
+            loop:true
+        }
+
+        let typed = new Typed("#texto", configuracao);
+
         tippy('#github', {
           content: 'thepinkwheat',
-          placement: 'right'
+          placement: 'right',
+          backDelay: 10,
+          loop: true
         });
+
+        tippy('#contato',{
+            content:'Enviar mensagem',
+            placement:'bottom',
+            backDelay: 10,
+            loop: true,
+            followCursor: true,
+            theme: 'translucent',
+        })
+        
       </script>
 </body>
 </html>

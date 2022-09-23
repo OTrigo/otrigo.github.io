@@ -17,7 +17,7 @@
 html{
     display: flex;  
     justify-content: center;
-    
+    align-items:center;
 }
 
 body{
@@ -83,6 +83,78 @@ a{
 body{
     background-color: var(--fundo);
 }
+
+
+main.area-principal{ 
+    display: block;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+section#principal{
+    background-image: url('../images/principal/capa.jpg');
+    display: flex;
+    justify-content: flex-start;
+    padding: 15% 100px;
+    align-items: center;
+    color: var(--texto);
+    flex-direction: row;
+    position: relative;
+    z-index: 9999;
+    background-size: cover;
+}
+
+section#principal h3{
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+section#principal h1{
+    font-size: 3rem;
+    z-index: 99;
+}
+
+section#principal h2{
+    font-size: 2rem;
+    z-index: 99;
+}
+
+.subtitle .funcoes{
+    color: var(--texto);
+}
+
+.buttons-wrapper-principal{
+    display:flex;
+    flex-direction:row;
+}
+
+.buttons-wrapper-principal .button{
+    width:10rem;
+    margin-top:2.5%;
+    height:3rem;
+    background-color:var(--fundo);
+    border: 1px solid var(--texto);
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+    margin-right:10px;
+    font-size: 0.8rem;
+    color: var(--texto);
+    border-radius: 10px;
+}
+
+.button#contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    padding-left: 10px;
+}
+
+/* Nav */
 
 nav li a:hover:not(#sobre){
     color:var(--fundo-claro);
@@ -427,6 +499,14 @@ article.projetosjs{
 
     body{
         width:100%;
+    }
+
+    section#principal{
+        padding:50px;
+    }
+
+    #contato{
+        margin-top:10%;
     }
 
     main#id-area{
