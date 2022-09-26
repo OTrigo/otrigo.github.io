@@ -17,6 +17,10 @@ function zawarudo(){
 
     display.innerHTML += html
 
+    setTimeout(function() {
+        freeze()
+    }, 4000)  
+
 }
 
 function freeze(){
@@ -31,6 +35,4 @@ function freeze(){
     }
 }
 
-setTimeout(function() {
-    freeze()
-}, 3000)  
+
