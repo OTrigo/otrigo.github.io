@@ -18,7 +18,7 @@ function zawarudo(){
     display.innerHTML += html
 
     setTimeout(function() {
-        //freeze()
+        freeze()
     }, 1000)    
     
 
