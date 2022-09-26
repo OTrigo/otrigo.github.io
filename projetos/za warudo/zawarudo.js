@@ -17,12 +17,6 @@ function zawarudo(){
 
     display.innerHTML += html
 
-    setTimeout(function() {
-        freeze()
-    }, 1000)    
-    
-
-
 }
 
 function freeze(){
@@ -36,3 +30,7 @@ function freeze(){
         Location.reload()
     }
 }
+
+setTimeout(function() {
+    freeze()
+}, 3000)  
