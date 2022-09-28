@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>StopWatch 2.0</nav>
+    </header>
+
+    <div class="container">
+        <p class="timer" id="timer_id">
+            00:00:00
+        </p>
+        
+        <p id="buttons_container">
+        <button type="button" class="btn-normal" id='start' onClick="clickStartStop()">Começar</button>
+        <button type="button" class="btn-normal" id='stop' onClick="reset()">Resetar</button>
+        </p>
+
+    <footer>
+        <h6>Stopwatch by <a href="https://github.com/thepinkwheat" target="_blank">PinkWheat</a></h6>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
