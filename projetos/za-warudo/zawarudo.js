@@ -19,7 +19,7 @@ function zawarudo(){
 
     setTimeout(function() {
         freeze()
-    }, 1000)    
+    }, 4000)    
     
 
 
