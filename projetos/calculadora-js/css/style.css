@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+*{
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color:#21222C;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.app-calculator{
+    height: auto;
+    background-color:#313442;
+    width:35vw;
+    margin: auto;
+    margin-top: 5vh;
+    padding:2vh;
+    text-align: center;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.356);
+}
+
+.display-calculator{
+    background-color:white;
+    width: auto;
+    margin:auto;
+    height: 5vh;
+    font:normal 4vh Arial;
+    color: black;
+    margin:5vh 5vh;
+    padding: 2vh 5vh;
+    text-align: right;
+}
+
+.calculator-buttons{
+    margin: auto;
+}
+
+.btn-number{
+    display: inline;
+    height: auto;
+    width: 5vw;
+    font-size:3vw;
+    border:none;
+    margin: 0.25vw;
+    cursor: pointer;
+}
+
+.btn-especials{
+    display: inline-block;
+    height: auto;
+    width: 5vw;
+    font-size:3vw;
+    border:none;
+    margin: 0.25vw;
+    cursor: pointer;
+    background-color:#262833;
+    color: white;
+}
+
+.btn-especials:hover{
+    background-color:#040405;
+}
+
+.btn-number:hover{
+    background-color:#040405;
+    color: white;
+}
+
+nav{
+    background-color:#262833;
+    color: black;
+    display: flex;
+    height: 1em;
+    padding:0.5em;
+    font-size: 4vw;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.356);
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    font-size: 2vh;
+}
+
+#btn-zero{
+    width: 11vw;
+    height:auto;
+    margin-right: 0.5vw;
+}
+
+#btn-equal{
+    width: 5vw;
+    height:16vh;
+    padding: 2vh;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration:none;
+    color: inherit;
+    color:#606582;
+    transition:0.5s;
+}
