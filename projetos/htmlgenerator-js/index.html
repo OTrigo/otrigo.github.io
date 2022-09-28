@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex WebApp by PinkWheat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>DOM Events</nav>
+    </header>
+
+    <main>
+        <sidebar>
+            <h2>Config</h2>
+            <h3>Background color</h3>
+                <aside class="btn-group">
+                    <button class="btn-color" id="red" onclick="changeBackColor('red')"></button>
+                    <button class="btn-color" id="green" onclick="changeBackColor('green')"></button>
+                    <button class="btn-color" id="blue" onclick="changeBackColor('blue')"></button>
+                    <button class="btn-color" id="yellow" onclick="changeBackColor('yellow')"></button>
+                    <button class="btn-color" id="brown" onclick="changeBackColor('brown')"></button>
+                    <button class="btn-color" id="black" onclick="changeBackColor('black')"></button>
+                    <button class="btn-color" id="purple" onclick="changeBackColor('purple')"></button>
+                    <button class="btn-color" id="orange" onclick="changeBackColor('orange')"></button>
+                    <button class="btn-color" id="cyan" onclick="changeBackColor('cyan')"></button>
+                    <button class="btn-color" id="pink" onclick="changeBackColor('pink')"></button>
+                    <button class="btn-color" id="grey" onclick="changeBackColor('grey')"></button>
+                    <button class="btn-color" id="sakurapink"onclick="changeBackColor('sakurapink')"></button>
+                </aside>
+                <h3>Text color</h3>
+
+                <aside class="btn-group">
+                    <button class="btn-color" id="red" onclick="changeTextColor('red')"></button>
+                    <button class="btn-color" id="green" onclick="changeTextColor('green')"></button>
+                    <button class="btn-color" id="blue" onclick="changeTextColor('blue')"></button>
+                    <button class="btn-color" id="yellow" onclick="changeTextColor('yellow')"></button>
+                    <button class="btn-color" id="brown" onclick="changeTextColor('brown')"></button>
+                    <button class="btn-color" id="black" onclick="changeTextColor('black')"></button>
+                    <button class="btn-color" id="purple" onclick="changeTextColor('purple')"></button>
+                    <button class="btn-color" id="orange" onclick="changeTextColor('orange')"></button>
+                    <button class="btn-color" id="cyan" onclick="changeTextColor('cyan')"></button>
+                    <button class="btn-color" id="pink" onclick="changeTextColor('pink')"></button>
+                    <button class="btn-color" id="grey" onclick="changeTextColor('grey')"></button>
+                    <button class="btn-color" id="sakurapink"onclick="changeTextColor('sakurapink')"></button>
+                </aside>
+
+                <aside class="btn-group">
+                    <button class="btn-normal" onclick="createTittle()">Criar um título</button>
+                    <button class="btn-normal" onclick="createLorem()">Criar um Lorem</button>
+                    <button class="btn-normal" onclick="createParagraph()">Criar um parágrafo</button>
+                    <button class="btn-normal" onclick="reset()">Resetar</button> 
+                        <input type="file" class="btn-normal" accept="image/*" onchange="createImage(event)" alt="Adicionar uma imagem">
+                </aside>
+                
+        </sidebar>
+        <container class="app" id="webApp">
+
+        </container>
+    </main>
+
+    <footer>
+        <footer>
+            <h6>FlexWeb App by <a href="https://github.com/thepinkwheat" target="_blank">PinkWheat</a></h6>
+        </footer>
+    </footer>
+</body>
+</html>
+<script src='js/script.js'></script>

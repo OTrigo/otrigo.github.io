@@ -1,0 +1,149 @@
+*{
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color:#626476;
+}
+
+header{
+    display:block;
+    width:auto;
+    height: auto;
+    background-color:#21222C;
+    color: white;
+    padding:0.1%;
+    font-size:2em;
+    padding-left: 0.5em;
+    padding-top:0.75em;
+    padding-bottom:1em;
+    transition:1s;
+}
+
+.tittle{
+    display:inline;
+    width: auto;
+    margin-left: 10vw;
+    max-width:20vw;
+}
+
+.search{
+    display:inline;
+    border-radius: 8px;
+    height: 3em;
+    width: 70em;
+    margin-bottom: auto;
+    margin-left: 10vw;
+    text-decoration: none;
+    padding-left: 1em;
+    max-width:40vw;
+}
+
+#btn-search{
+    display:inline;
+    width: 6em;
+    height: 3em;
+    border: none;
+    border-radius:5px;
+}
+
+.initial-container{
+    display:block;
+    width:auto;
+    height: auto;
+    background-color:#282A36;    
+    color: white;
+    padding: 1%;  
+    text-align:center;  
+    transition: 0.25s;
+}
+
+.item-box{
+    display:inline-flex;
+    height:10em;
+    width: 20em;
+    background-color:white;
+    color: black;
+    padding:auto;
+    margin: 1em;
+}
+
+.item-tittle{
+    padding: auto;
+    margin: auto;
+}
+
+.container-categorys{
+    display:block;
+    width:100%;
+    height: auto;
+    background-color:#3b3f50;    
+    color: white; 
+    padding:5em 0em;
+    text-align:center;
+}
+
+.container-category>.category-title{
+    display: inline-block;
+    font-size: 20em;
+    margin-bottom:6em;
+}
+
+.container-categorys>.category-group{
+    display:inline-block;
+    margin: auto;
+}
+
+.category-group>.category{
+    display: inline-block;
+    height: 10em;
+    width: 12em;
+    margin-right: 2em;
+    margin-bottom: 5em;
+    transition: 0.25s;
+    background-color:#3b3f50;
+}
+
+#invisible{
+    display: none;
+}
+
+.category>.category-image:hover{
+    transition:0.25s;
+    opacity:0.2;
+    cursor: pointer;
+}
+
+.slider{
+    display: block;
+    min-height: 20em;
+    max-height:20em;
+    width: auto;
+    background-color:white;
+    justify-content:center;
+    padding: 2em 0em;
+}
+
+#banner{
+    max-height:20em;
+}
+
+.btn-slider{
+    width: 3em;
+    background-color:black;
+    border-radius:40px;
+    font-size:2em;
+    font-weight:bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    text-align:center;
+    color: white;
+    background-color:#626476;
+    margin: 2em 0em;
+}
