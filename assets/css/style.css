@@ -435,6 +435,10 @@ article.projetosjs{
     padding: 4px;
 }
 
+#container-mini-projetos{
+    margin-top: 2%;
+}
+
 /* Responsividade */
 @media (max-width:1300px){
     .grupo-trabalhos{

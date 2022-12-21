@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Decodificador de Texto - Alura Challenges Oracle ONE</title>
+        <link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/style.css">
+        <script src="js/functions/criptografar.js" defer></script>
+        <script src="js/functions/descriptografar.js" defer></script>
+        <script src="js/functions/reset.js" defer></script>
+        <script src="js/functions/copiar.js" defer></script>
+	</head>
+
+	<body>
+		
+        <div class="container">
+            <header>
+                <div class="cabeçalho" id="entrada">
+                    <img id="logo-alura" src="image/logo-Alura.png" alt="logo-Alura">
+                </div>
+            </header>
+    
+            <main>
+                <section class="campo" id="input">
+                    <textarea id="msg" rows="20" placeholder="Digite seu texto" autofocus></textarea>
+    
+                    <div class="botoes">
+                        <button id="encrypt">Criptografar</button>
+                        <button id="decrypt">Descriptografar</button>
+                    </div>
+                </section>
+    
+                <section class="container-resultado" id="resultado">
+                    <textarea id="final-text" readonly></textarea>
+    
+                    <div class="botoes">
+                        <button id="copy">Copiar</button>
+                        <button id="reset">Limpar</button>
+                    </div>
+                </section>
+            </main>
+    
+            <footer></footer>   
+        </div>
+		
+	</body>
+</html>
