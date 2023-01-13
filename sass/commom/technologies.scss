@@ -1,0 +1,76 @@
+#technologies {
+    flex-direction: column;
+    background-image: linear-gradient(
+      to bottom,
+      $bgColor 0,
+      $bgColor 60%,
+      white 40%
+    );
+    p{
+      color: white;
+      &:hover{
+        color: $principalColor;
+        transition: all ease-in 0.25s;
+      }
+    }
+    padding: 2%;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    .technologiesImages {
+      display: flex;
+      cursor: pointer;
+      flex-wrap: wrap;
+      transition: all 0.25s ease-in-out;
+      &:hover :not(:hover) {
+        opacity: 0.3;
+        transition: all 0.25s ease-in-out;
+      }
+      img {
+        padding: 0 25px;
+        transition: all 0.25s ease-in-out;
+  
+        &:hover {
+          scale: 1.1;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px){
+    #technologies {
+        background: linear-gradient(
+            to bottom,
+            $bgColor 0,
+            $bgColor 70%,
+            $bgColor 30%
+          );
+          .technologiesImages {
+            #imagem1{
+              grid-area: imagem1;
+            }
+            #imagem2{
+              grid-area: imagem2;
+            }
+            #imagem3{
+              grid-area: imagem3;
+            }
+            #imagem4{
+              grid-area: imagem4;
+            }
+            #imagem5{
+              grid-area: imagem5;
+            }
+            #imagem6{
+              grid-area: imagem6;
+            }
+            display: grid;
+            grid-template-areas: 
+            "imagem1 imagem2"
+            "imagem3 imagem4"
+            "imagem5 imagem6";            
+          }
+    }
+  }

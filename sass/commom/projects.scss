@@ -1,0 +1,60 @@
+.projects{
+    min-height: 80vh;
+    height: auto;
+    background-color: $bgColor;
+    #carouselProjects{
+        min-height: 50vh;
+        width: 100%;
+        .col-lg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 50px;
+        }
+        .card{
+            min-height: 350px;
+            height: auto;
+            width: 350px;
+            padding: 1%;
+            background-color: $principalColor;
+            color: white;
+            .card-body{
+                padding: 10%;
+                background-color: white;
+                color: black;
+                &:hover{
+                    background-color: $principalColor;
+                    color: white;
+                    transition: all ease-in-out 0.25s;
+                    cursor: pointer;
+                }
+            }
+            img.img-fluid{
+                &:hover{
+                    scale: 1.1;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    transition: all ease-in-out 0.25s;
+                }
+                .card-body{
+                    color: green;
+                }
+            }
+            .projectTechnologies{
+                img{
+                    height: 25px;
+                }
+            }
+        }
+        .carousel-indicators{
+            margin-top: 200px;
+        }
+    }
+}
+
+@media (max-width: 1355px){
+    .row{
+        flex-direction: column;
+        gap: 24px;
+    }
+}

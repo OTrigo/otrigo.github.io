@@ -1,0 +1,78 @@
+.navbar{
+    background: $bgColor;
+    height: 10vh;
+    padding: auto;
+}
+
+#navbarText{
+    padding-right: 50px;
+    .navButton{
+        padding:10px 15px;
+        margin: 0 12px;
+        width: fit-content;
+        text-align: center;
+        &:not(#principalButton){
+            color: $lightTxt;
+            &:hover{
+                color: $principalColor;
+            }
+        }
+    }
+}
+
+#logo, #logoHidden{
+    color: $lightTxt;
+    font-size: 28px;
+    font-weight: 900;
+    padding: 0 24px;
+    &:hover{
+        span{
+            transition: 0.25s;
+            color: $principalColor;
+        }
+    }
+}
+
+#logoHidden{
+    display: none;
+}
+
+#principalButton{
+    background-color: $principalColor;
+    border: none;
+    &:hover{
+        background-color: $lightBgColor;
+        color: $darkTxt;
+    }
+}
+
+@media (max-width: 1050px){
+    .navbar{
+        height: auto;
+    }
+    #containerNav{
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media(max-width:950px){
+    #btnCollapse{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #navbarText{
+        padding-top: 10%;
+    }
+}
+
+@media(max-width:465px){
+    #logo{
+        display: none;
+    }
+    #logoHidden{
+        display: inline;
+    }
+}

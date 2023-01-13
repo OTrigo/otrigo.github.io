@@ -1,0 +1,39 @@
+.principalBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    background-image: url(./../../images/script.gif);
+    background-repeat: repeat;
+    filter: contrast(140%);
+    .principalBannerContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2%;
+        #hi{
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+        #principalBannerTittle{
+            cursor: pointer;
+            &:hover{
+                span{
+                    transition: 1s;
+                    color: $principalColor;
+                }
+            }
+        }
+    }
+    .arrow{
+        height: 10%;
+        width: 10%;
+        background-image: url(./../../images/arrowDown.gif);
+        background-position: center center;
+        background-size: cover;
+        cursor: pointer;
+    }
+}

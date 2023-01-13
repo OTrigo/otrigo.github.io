@@ -1,324 +1,257 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge Lucas | Desenvolvedor Full-Stack</title>
-    <link rel="stylesheet" href="assets/css/style.css" defer>
-    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
+    <title>Jorge Lucas - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav class="navegacao" id="nav">
-        <div class="width-nav" id="nav-content">
-            <h2 class="logo">
-                <span class="efeito-logo">Jorge</span> 
-                <span class="efeito-logo">Lucas</span>
-            </h2>
-            <ul class="links">
-                <li><a href="#sobre-mim" id="sobre">Sobre mim</a></li>
-                <li><a href="#meus-trabalhos">Meus trabalhos</a></li>
-                <li><a href="https://www.linkedin.com/in/jorge-lucas-473a32211/" target="_blank">Linkedin</a></li>
-            </ul>
-            <div class="menu-btn" id="hamburger">
-                <ion-icon name="menu-outline" id="icon-burg"></ion-icon>
-            </div>
-        </div>
-    </nav>
-
-    <main class="area-principal">
-        <section id="principal">
-            <article class="principal-title">
-                <h3 class="subtitle">Primeiramente</h3>
-                <h1 class="title">Olá, eu sou Jorge Lucas</h1>
-                <h2 class="subtitle">Sou Desenvolvedor <span class="funcoes" id="texto">Web</span></h2>
-                <div class="buttons-wrapper-principal">
-                    <button class="button" id="contato">
-                        <ion-icon name="mail-outline" id="icon-email"></ion-icon>
-                        <p class="contato">Contate-me</p>
-                    </button>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <main class="area-sobre">
-        <section id="sobre-mim">
-            <article class="sobre-esquerdo">
-                <img src="assets/images/foto-pessoal.jpg" id="perfil-imagem">
-            </article>
-
-            <article class="sobre-direito">
-                <h2 class="title">
-                    Sobre Mim
-                </h2>
-                <p class="text">
-                    Sou Jorge Lucas, Estudante da <span class="amarelo-hover">FATEC de Praia Grande no curso de Sistemas de Informação</span> e amante do JavaScript & TypeScript e suas respectivas bibliotecas e frameworks. 
-                    Atualmente estou estudando os principais frameworks em JavaScript para desenvolvimento web e desenvolvimento de software tanto no back quanto para o front-end.
-                </p>
-                <div class="buttons-wrapper">
-                    <button class="button" id="email">
-                        <ion-icon name="mail-outline" id="icon-email"></ion-icon>
-                        <p>Email</p>
-                    </button>
-                    
-                    
-                    <a class="button" id="github" href="https://www.github.com/thepinkwheat">
-                        <ion-icon name="logo-github"></ion-icon>                        
-                        <p>Github</p> 
-                    </a>
-                </div>
-                
-            </article>
-
-        </section>
-    </main>
-
-    <main class="area-cards">
-        <section id="meus-trabalhos">
-            <article class="trabalhos">
-                <h2 class="title">Meus trabalhos</h2>
-                <div class="grupo-trabalhos">
-                    <a href="#projetosJs" id="jsProjects">
-                        <div class="bloco-trabalho">
-                            <p>Projetos Javascript</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://solanium.com.br" target="_blank">
-                        <div class="bloco-trabalho">
-                            <p>Site Solanium</p>
-                        </div>
-                    </a>
-
-                    <a href="https://solanium.com.br" target="_blank" id="OtherProjects">
-                        <div class="bloco-trabalho">
-                            <p>Outros projetos</p>
-                        </div>
-                    </a>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <main class="area-js">
-        <section id="meus-projetos-js">
-            <article class="projetosjs">
-                <h2 class="title">Projetos em JavaScript Puro</h2>
-                <div class="grupo-projetos-js">
-                        <div class="card-js">
-                            
-                            <a href="projetos/calculadora-js/" target="_blank">
-                                <div class="card-js-content">
-                                    <img src="assets/images/js-puro/calculadora.png">
-                                </div>
-                            </a>
-                            
-                            <div class="card-js-header">
-                                <h3>Calculadora em Js Puro</h3>
-                            </div>
-                            
-                            <div class="card-js-description">
-                                <p>Calculadora criada a partir de HTML5, CSS3 e JavaScript.</p>
-                            </div>
-
-                            <div class="card-js-footer">
-                                <p>
-                                    <ion-icon name="logo-html5" class="logo-html"></ion-icon>
-                                    <ion-icon name="logo-css3" class="logo-css"></ion-icon>
-                                    <ion-icon name="logo-nodejs" class="logo-node"></ion-icon>
-                                </p>
-                            </div>
-                        
-                        </div>
-                        <div class="card-js">
-
-                            <a href="projetos/htmlgenerator-js/" target="_blank">
-                                <div class="card-js-content">
-                                    <img src="assets/images/js-puro/flexWebApp.png">
-                                </div>
-                            </a>
-                            
-                            <div class="card-js-header">
-                                <h3>FlexWebApp - Aplicação para gerar html</h3>
-                            </div>
-                            
-                            <div class="card-js-description">
-                                <p>Gerador de texto usando conceitos sobre DOM utilizando JavaScript</p>
-                            </div>
-                            
-                            <div class="card-js-footer">
-                                <p>
-                                    <ion-icon name="logo-html5" class="logo-html"></ion-icon>
-                                    <ion-icon name="logo-css3" class="logo-css"></ion-icon>
-                                    <ion-icon name="logo-nodejs" class="logo-node"></ion-icon>
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="card-js">
-                            <a href="projetos/stopwatch-js/" target="_blank">
-                                <div class="card-js-content">
-                                    <img src="assets/images/js-puro/StopWatch.png">
-                                </div>
-                            </a>
-                            <div class="card-js-header">
-                                <h3>StopWatch - Cronômetro virtual</h3>
-                            </div>
-                            <div class="card-js-description">
-                                <p>Essa aplicação foi feita em HTML5, CSS3, JS e foi desenvolvida para 
-                                    funcionar como cronômetro</p>
-                            </div>
-
-                            <div class="card-js-footer">
-                                <p>
-                                    <ion-icon name="logo-html5" class="logo-html"></ion-icon>
-                                    <ion-icon name="logo-css3" class="logo-css"></ion-icon>
-                                    <ion-icon name="logo-nodejs" class="logo-node"></ion-icon>
-                                </p>
-                            </div>
-                        
-                        </div>
-                        <div class="card-js">
-
-                            <a href="projetos/randomizer-js/" target="_blank">
-                                <div class="card-js-content">
-                                    <img src="assets/images/js-puro/randomizer.png">
-                                </div>
-                            </a>
-                            
-                            <div class="card-js-header">
-                                <h3>Randomizador de fotos</h3>
-                            </div>
-                            
-                            <div class="card-js-description">
-                                <p>Randomizador de fotos gerado em JavaScript e as imagens são da biblioteca de fotos da Picsum.</p>
-                            </div>
-
-                            <div class="card-js-footer">
-                                <p>
-                                    <ion-icon name="logo-html5" class="logo-html"></ion-icon>
-                                    <ion-icon name="logo-css3" class="logo-css"></ion-icon>
-                                    <ion-icon name="logo-nodejs" class="logo-node"></ion-icon>
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="card-js">
-
-                            <a href="projetos/todoList-js/" target="_blank">
-                                <div class="card-js-content">
-                                    <img src="assets/images/js-puro/todo-list.png">
-                                </div>
-                            </a>
-
-                            <div class="card-js-header">
-                                <h3>To-Do List</h3>
-                            </div>
-
-                            <div class="card-js-description">
-                                <p>To-Do List feito em HTML5 CSS3 e JavaScript</p>
-                            </div>
-
-                            <div class="card-js-footer">
-                                <p>
-                                    <ion-icon name="logo-html5" class="logo-html"></ion-icon>
-                                    <ion-icon name="logo-css3" class="logo-css"></ion-icon>
-                                    <ion-icon name="logo-nodejs" class="logo-node"></ion-icon>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-js">
-                            <a href="projetos/za-warudo/" target="_blank">
-                                <div class="card-js-content">
-                                    <img src="assets/images/js-puro/za-warudo.png">
-                                </div>
-                            </a>
-                            <div class="card-js-header">
-                                <h3>Não aperte esse botão.</h3>
-                            </div>
-                            <div class="card-js-description">
-                                <p>Mas se você quiser eu não vou impedir, só saiba que tudo irá congelar.</p>
-                                
-                            </div>
-
-                            <div class="card-js-footer">
-                                <p>
-                                    <ion-icon name="logo-html5" class="logo-html"></ion-icon>
-                                    <ion-icon name="logo-css3" class="logo-css"></ion-icon>
-                                    <ion-icon name="logo-nodejs" class="logo-node"></ion-icon>
-                                </p>
-                            </div>
-                        </div>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <main class="area-cards" id="container-mini-projetos">
-        <section id="meus-trabalhos">
-            <article class="trabalhos">
-                <h2 class="title">Mini projetos recentes</h2>
-                <div class="grupo-trabalhos">
-                    <a href="projetos/mini_projetos/desafio_codificador_ONE/index.html" id="jsProjects">
-                        <div class="bloco-trabalho">
-                            <p>Codificador de texto - Alura ONE</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://solanium.com.br" target="_blank">
-                        <div class="bloco-trabalho">
-                            <p>Em breve</p>
-                        </div>
-                    </a>
-
-                    <a href="https://solanium.com.br" target="_blank" id="OtherProjects">
-                        <div class="bloco-trabalho">
-                            <p>Em breve</p>
-                        </div>
-                    </a>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <section id="linkedin">
-        <article class="parallax">
-        </article>
-    </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
     
-        let configuracao = {
-            strings: ['Web', 'Mobile', 'JavaScript'],
-            typeSpeed: 60,
-            backSpeed:60,
-            loop:true
-        }
+    <nav class="navbar navbar-expand-lg px-5 py-3" data-bs-theme="dark">
+        <div class="container-fluid" id="containerNav">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" id="btnCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="logo">
+            <span>&lt</span>Jorge Lucas<span>/&gt</span>
+          </a>
+          <a class="navbar-brand" href="#" id="logoHidden">
+            <span>&lt</span>JL<span>/&gt</span>
+          </a>
+          <div class="navbar-collapse collapse" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link navButton btn active navButton" href="#technologies" id="principalButton">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navButton" href="#projects">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navButton" href="https://www.linkedin.com/in/jorge-lucas-473a32211/" target="_blank">LinkedIn</a>
+              </li>
+            </ul>
+            <div class="nav-item">
+              <a class="nav-link navButton" href="https://github.com/thepinkwheat" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-        let typed = new Typed("#texto", configuracao);
+    <div class="container-fluid principalBanner">
+      <div class="principalBannerContent" data-aos="fade-down" data-aos-duration="1500">
+        <p class="display-6 text-white" id="hi">Olá, eu sou</p>
+        <p class="display-1 text-center text-white" id="principalBannerTittle">Desenvolvedor <span>full-stack</span></p>
+        <a href="#technologies" class="pt-5 arrow" alt=""></a>
+      </div>
+    </div>
 
-        tippy('#github', {
-          content: 'thepinkwheat',
-          placement: 'right',
-          backDelay: 10,
-          loop: true
-        });
+    <section class="container-fluid d-flex" id="technologies">
+      <p class="display-6" data-aos="fade-down" data-aos-duration="1300">Minhas habilidades</p>
+      <div class="technologiesImages" data-aos="fade-down" data-aos-duration="1300">
+        <img src="./images/icons/js.png" alt="" id="imagem1">
+        <img src="./images/icons/nodejs.png" alt="" id="imagem2">
+        <img src="./images/icons/sass.png" alt="" id="imagem3">
+        <img src="./images/icons/react.png" alt="" id="imagem4">
+        <img src="./images/icons/bootstrap.png" alt="" id="imagem5">
+        <img src="./images/icons/css.png" alt="" id="imagem6">
+      </div>
+    </section>
 
-        tippy('#contato',{
-            content:'Enviar mensagem',
-            placement:'bottom',
-            backDelay: 10,
-            loop: true,
-            followCursor: true,
-            theme: 'translucent',
-        })
-        
-      </script>
+    <div class="container-fluid aboutMe" id="aboutMe">
+      <div class="content" data-aos="fade-right" data-aos-duration="1000">
+        <div class="aboutMeText">
+          <h4 class="fw-normal fs-5">Um pouco sobre mim</h4>
+          <div class="aboutMePhoto" id="hidden">
+            <img src="./images/foto-pessoal.jpg" class="personalPhoto" alt="">
+          </div>
+          <h2 class="fw-medium fs-2">Jorge Lucas Trigo Coronado</h2>
+          <h3 class="fw-light">Cursando Análise e Desenvolvimento de Sistemas</h3>
+          <h4 class="fw-lighter">20 anos</h4>
+        </div>
+        <div class="aboutMePhoto">
+          <img src="./images/foto-pessoal.jpg" class="personalPhoto" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid projects" id="projects">
+      <h1 class="text-center text-white display-6 pt-4" data-aos="fade-down" data-aos-duration="1000">Projetos recentes</h1>
+      <div id="carouselProjects" class="carousel slide pt-5" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="1000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            
+            <div class="row">
+              <div class="col-lg">
+                <a href="https://jorgelucasproject-bootstrap-sass.netlify.app/" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/spaceX.png">
+                    <div class="card-body">
+                        <h4 class="card-title">SpaceX OneBitCode</h4>
+                        <p class="card-text">Projeto criado utilizando SASS e Bootstrap durante o curso OneBitCode.</p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/bootstrap.png" alt="">
+                          <img src="./images/icons/sass.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg">
+                <a href="https://projeto-turma4-one.netlify.app" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/codificadorDeTexto.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Decodificador ONE</h4>
+                        <p class="card-text">Codificador e Decodificador de texto criado utilizando JavaScript durante o curso fornecido pela ONE.</p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/css.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg">
+                <a href="https://jorgelucas-calculator-js.netlify.app/" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/calculadora.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Calculadora JS</h4>
+                        <p class="card-text">Projeto antigo de uma calculadora simples feita em javascript puro. </p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/css.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+
+            <div class="row">
+              <div class="col-lg">
+                <a href="https://jorgelucas-conceitos-dom.netlify.app/" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/dom.png">
+                    <div class="card-body">
+                        <h4 class="card-title">DOM - Conceitos aplicados</h4>
+                        <p class="card-text">Projeto pessoal criado em JS puro para aplicar conceitos do DOM.</p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/css.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg">
+                <a href="https://jorgelucas-randomizer-js.netlify.app/" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/randomizer.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Random Photos Picker</h4>
+                        <p class="card-text">Aplicação web que utiliza a api de um banco de imagens para pegar imagens aleatórias.</p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/css.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg">
+                <a href="https://jorgelucas-todo-list-js.netlify.app/" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/todo-list.png">
+                    <div class="card-body">
+                        <h4 class="card-title">ToDo List</h4>
+                        <p class="card-text">Projeto antigo de uma To-Do List utilizando apenas Javascript puro.</p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/css.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            
+            <div class="row">
+              <div class="col-lg">
+                <a href="https://jorgelucas-za-warudo.netlify.app/" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/za-warudo.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Não aperte esse botão.</h4>
+                        <p class="card-text">Projeto criado em JavaScript puro, em nenhuma hipótese pressione esse botão.</p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/css.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg">
+                <a href="https://solanium-energia-solar.netlify.app" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/solanium.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Site Solanium</h4>
+                        <p class="card-text">Um dos meus primeiros serviços prestados para empresas. Um pequeno orgulho meu.</p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                          <img src="./images/icons/css.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg">
+                <a href="https://jorgelucas-stopwatch-js.netlify.app/" target="_blank">
+                  <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="./images/projects/StopWatch.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Stopwatch</h4>
+                        <p class="card-text">Projeto antigo de um cronômetro simples feito em javascript puro. </p>
+                        <div class="projectTechnologies d-flex">
+                          <img src="./images/icons/js.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
