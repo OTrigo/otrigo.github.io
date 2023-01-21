@@ -80,3 +80,32 @@ footer{
         }
     }
 }
+
+@media (max-width: 918px){
+    footer{
+        flex-direction: column;
+        .logo-footer{
+            width: 100%;
+            align-items: center;
+            padding: 0;
+            p{
+                display: none;
+            }
+        }
+        .info{
+            width: 100%;
+            padding: 6px 5% 24px 5%; 
+            align-items: center;
+            justify-content: center;
+            .footer-about{
+                .footer-menu{
+                    justify-content: center;
+                }
+                .footer-about{
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
