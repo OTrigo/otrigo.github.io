@@ -1,0 +1,61 @@
+#oldProjects{
+    background-color: white;
+    .container{
+        display: flex;
+        flex: 0 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    h2{
+        color: $bgColor;
+        padding-bottom: 2rem;
+    }
+    .card{
+        height: auto;
+        min-height: 350px;
+        width: 300px;
+        padding: 1%;
+        margin: 8px 0;
+        background-color: #36313e;
+        color: white;
+        .card-body{
+            padding: 10%;
+        }
+        img.img-fluid{
+                &:hover{
+                    scale: 1.1;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    transition: all ease-in-out 0.25s;
+                }
+                .card-body{
+                    color: green;
+                }
+            }
+            
+            &:hover{
+                background-color: white;
+                color: black;
+                transition: all ease-in-out 0.25s;
+            }   
+        }
+        .projectTechnologies{
+            img{
+                height: 25px;
+            }
+
+        }
+        
+}
+
+@media (max-width:768px){
+    #oldProjects{
+        .row{
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
+

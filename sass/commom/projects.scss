@@ -1,7 +1,8 @@
-.projects{
+#projects{
     min-height: 80vh;
     height: auto;
     background-color: $bgColor;
+    padding-bottom: 5%;
     #carouselProjects{
         min-height: 50vh;
         width: 100%;
@@ -53,9 +54,11 @@
 }
 
 @media (max-width: 1355px){
+    #projects{
     .row{
         flex-direction: column;
         gap: 24px;
     }
     .projects{padding-bottom: 10%;}
+}
 }
