@@ -50,6 +50,14 @@
         .carousel-indicators{
             margin-top: 200px;
         }
+
+        .carousel-control-prev{
+            justify-content: flex-start;
+        }
+
+        .carousel-control-next{
+            justify-content: flex-end;
+        }
     }
 }
 
